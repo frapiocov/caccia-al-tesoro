@@ -1,0 +1,21 @@
+<h1 id="orologio"></h1>
+
+<script>
+    function mostraOrario() {
+      const dataCorrente = new Date();
+      let ore = dataCorrente.getHours();
+      let minuti = dataCorrente.getMinutes();
+      let secondi = dataCorrente.getSeconds();
+      
+      ore = ore < 10 ? "0" + ore : ore;
+      minuti = minuti < 10 ? "0" + minuti : minuti;
+      secondi = secondi < 10 ? "0" + secondi : secondi;
+
+      const orarioFormattato = ore + ":" + minuti + ":" + secondi;
+      
+      document.getElementById("orologio").textContent = orarioFormattato;
+    }
+
+    mostraOrario();
+    setInterval(mostraOrario, 1000);
+</script>
