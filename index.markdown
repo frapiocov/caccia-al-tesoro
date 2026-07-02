@@ -5,5 +5,5 @@
 layout: home
 ---
 Lista dei sotto progetti:
-- Caccia al tesoro 2025: [Il blog di gionatasso](/leggere-morra/)
+- Caccia al tesoro 2025: [Il blog di gionatasso](/caccia-al-tesoro/leggere-morra/)
 - [Progetto B](/progetto-b/)
