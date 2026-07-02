@@ -38,6 +38,7 @@ jobs:
       - name: Build Progetto gionatasso
         run: |
           cd blog-gionatasso
+          bundle install
           bundle exec jekyll build --destination ../_site/leggere-morra
 
       # duplicare per ogni sotto progetto
