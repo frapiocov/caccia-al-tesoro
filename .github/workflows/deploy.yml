@@ -1,0 +1,57 @@
+name: Deploy multiplo Jekyll
+
+on:
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del codice
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby e Jekyll
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Configura GitHub Pages
+        uses: actions/configure-pages@v4
+
+      # 1. sito principale
+      - name: Build Sito Principale
+        run: |
+          bundle exec jekyll build --destination _site
+
+      # 2. gionatasso
+      - name: Build Progetto gionatasso
+        run: |
+          cd blog-gionatasso
+          bundle exec jekyll build --destination ../_site/leggere-morra
+
+      # duplicare per ogni sotto progetto
+
+      - name: Carica l'output finale
+        uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy su GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
