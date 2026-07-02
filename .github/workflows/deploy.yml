@@ -37,7 +37,7 @@ jobs:
       # 2. gionatasso
       - name: Build Progetto gionatasso
         run: |
-          cd blog-gionatasso
+          cd leggere-morra
           bundle install
           bundle exec jekyll build --destination ../_site/leggere-morra
 
