@@ -1,2 +1,1 @@
-# leggere-morra
-📰 giornale locale
+Treasure Hunt 🏴‍☠️
