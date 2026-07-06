@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-09-24T19:33:16+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Il blog di Gionatasso</title><subtitle>Benvenuto nel blog di Gionatasso, il blog libero di Leggere Morra!</subtitle><entry><title type="html">Ultim’ora!!</title><link href="http://localhost:4000/news/2025/09/24/ultima.html" rel="alternate" type="text/html" title="Ultim’ora!!" /><published>2025-09-24T13:45:10+02:00</published><updated>2025-09-24T13:45:10+02:00</updated><id>http://localhost:4000/news/2025/09/24/ultima</id><content type="html" xml:base="http://localhost:4000/news/2025/09/24/ultima.html"><![CDATA[<h1 id="orologio"></h1>
+
+<script>
+    function mostraOrario() {
+      const dataCorrente = new Date();
+      let ore = dataCorrente.getHours();
+      let minuti = dataCorrente.getMinutes();
+      let secondi = dataCorrente.getSeconds();
+      
+      ore = ore < 10 ? "0" + ore : ore;
+      minuti = minuti < 10 ? "0" + minuti : minuti;
+      secondi = secondi < 10 ? "0" + secondi : secondi;
+
+      const orarioFormattato = ore + ":" + minuti + ":" + secondi;
+      
+      document.getElementById("orologio").textContent = orarioFormattato;
+    }
+
+    mostraOrario();
+    setInterval(mostraOrario, 1000);
+</script>]]></content><author><name></name></author><category term="news" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Il caso Rosetta</title><link href="http://localhost:4000/mistery/2025/09/05/mariuccia.html" rel="alternate" type="text/html" title="Il caso Rosetta" /><published>2025-09-05T08:00:10+02:00</published><updated>2025-09-05T08:00:10+02:00</updated><id>http://localhost:4000/mistery/2025/09/05/mariuccia</id><content type="html" xml:base="http://localhost:4000/mistery/2025/09/05/mariuccia.html"><![CDATA[<p>Rosetta è stata trovata esanime, nell’articolo di oggi si parla di lei. Le più doverose condoglianze alla famiglia.</p>
+
+<p>Io sono un giornalista e non mi fermo davanti alle apparenze: Rosetta è deceduta per un taglio fattole al collo, e tengo a scrivere <em>fattole</em> in quanto credo che ci sia un o una responsabile.</p>
+
+<p>I Carabinieri hanno iniziato le indagini e io sono a stretto contatto per cercare di dare una mano.</p>
+
+<p>Sembra un caso, eppure la vicenda di Rosetta di qualche giorno fa a Morra ricorda la vicenda dell’8 giugno del 1742 a Firenze. Ricordavo di aver letto di questo fatto di cronaca in <em>101 perché sulla storia di Firenze che non puoi non sapere</em>, di Ippolita Douglas Scotti.</p>
+
+<p>Ci sono incredibili somiglianze nei due omicidi. Verrebbe quasi da pensare che il nostro assassino in fuga fosse a conoscenza di questo fatto di cronaca e, preso dal panico, abbia preso spunto per organizzare il suo imperdonabile gesto.</p>
+
+<p>La differenza è che per ora non se ne conosce l’identità, e l’arma del delitto è ancora da trovare. Potrei avere una pista efficace per la ricerca dell’arma, ma non posso pubblicare apertamente ciò che penso.</p>
+
+<p>Per il momento, vi allego alcuni documenti del caso di Mariuccia a Firenze.</p>
+
+<p><br /></p>
+
+<p><a href="https://frapiocov.github.io/leggere-morra/assets/pdf/documenti.pdf" download="" style="display:inline-block;            padding:8px 16px;            background-color:#007BFF;            color:white;            text-decoration:none;            border-radius:5px;            font-family:Arial,sans-serif;            font-size:14px;">Scarica documenti</a>
+<br />
+<br />
+<br /></p>
+
+<p><strong>Una riflessione personale</strong></p>
+
+<p>Per quanto riguarda i documenti appena letti… trovo ci sia qualcosa di grottescamente sacro nel fatto che Mariuccia sia stata sgozzata in via San Cristofano: lei, prostituta dimenticata, finita sotto la lama di un rasoio, mentre il santo da cui la via prende il nome morì decapitato per la fede.
+Uno perse la testa in nome di Dio, l’altra la gola per un uomo che si è creduto Dio.</p>]]></content><author><name></name></author><category term="mistery" /><summary type="html"><![CDATA[Rosetta è stata trovata esanime, nell’articolo di oggi si parla di lei. Le più doverose condoglianze alla famiglia.]]></summary></entry><entry><title type="html">Dediche speciali</title><link href="http://localhost:4000/love/2025/09/04/amore.html" rel="alternate" type="text/html" title="Dediche speciali" /><published>2025-09-04T19:45:10+02:00</published><updated>2025-09-04T19:45:10+02:00</updated><id>http://localhost:4000/love/2025/09/04/amore</id><content type="html" xml:base="http://localhost:4000/love/2025/09/04/amore.html"><![CDATA[<p>Il blog di Gionatasso non è solo un luogo virtuale dove i misteri vengono svelati, un amico del blog ci ha tenuto che io pubblicassi questa foto per una persona speciale. All’amore!</p>
+
+<p><img src="https://frapiocov.github.io/leggere-morra/assets/images/cuore_segnato.jpg" alt="posto" width="500" /></p>]]></content><author><name></name></author><category term="love" /><summary type="html"><![CDATA[Il blog di Gionatasso non è solo un luogo virtuale dove i misteri vengono svelati, un amico del blog ci ha tenuto che io pubblicassi questa foto per una persona speciale. All’amore!]]></summary></entry><entry><title type="html">Il Fantasma di Morra</title><link href="http://localhost:4000/mistery/2025/09/04/il-fantasma.html" rel="alternate" type="text/html" title="Il Fantasma di Morra" /><published>2025-09-04T10:05:10+02:00</published><updated>2025-09-04T10:05:10+02:00</updated><id>http://localhost:4000/mistery/2025/09/04/il-fantasma</id><content type="html" xml:base="http://localhost:4000/mistery/2025/09/04/il-fantasma.html"><![CDATA[<p>Sicuramente avrete letto l’articolo sul quotidiano leggereMorra, Mauro è uno dei cittadini più simpatici e sicuramente vi sarete fatti una risata.</p>
+
+<p>Io però sono curioso e volevo capire che cosa lo ha spaventato: mi sono recato stamattina sul luogo del fattaccio. Ho riso tantissimo. Mi aspettavo fosse qualcosa di singolare ma non così tanto. Allego una foto di quello che ho trovato.</p>
+
+<p>Un camice bianco! Di solito viene utilizzato da diversi tipi di mestieri: macellai, medici, chimici, inservienti… a quanto pare è stato perso.</p>
+
+<p>Io sono amante della natura e per rispetto dell’ambiente l’ho raccolto, lavato e steso nei pressi del vecchio ristorante morrese <em>Le Colombe</em>.</p>
+
+<p>Nell’articolo di oggi purtroppo nessuna morale, solo tanta simpatia 😄</p>
+
+<p><img src="https://frapiocov.github.io/leggere-morra/assets/images/fantasma_giorno.png" alt="fantasma" width="500" /></p>]]></content><author><name></name></author><category term="mistery" /><summary type="html"><![CDATA[Sicuramente avrete letto l’articolo sul quotidiano leggereMorra, Mauro è uno dei cittadini più simpatici e sicuramente vi sarete fatti una risata.]]></summary></entry><entry><title type="html">Il mistero del cane rosso</title><link href="http://localhost:4000/mistery/2025/08/29/il-cane.html" rel="alternate" type="text/html" title="Il mistero del cane rosso" /><published>2025-08-29T10:05:10+02:00</published><updated>2025-08-29T10:05:10+02:00</updated><id>http://localhost:4000/mistery/2025/08/29/il-cane</id><content type="html" xml:base="http://localhost:4000/mistery/2025/08/29/il-cane.html"><![CDATA[<p>Ci sono casi che ti arrivano via lettera, altri via voce, e altri ancora che ti bussano direttamente alla porta.
+Quello del piccolo Teodoro mi è piombato addosso una mattina di maggio, quando Teresa — occhi azzurri come il cielo sopra l’Appennino e voce tremante come una finestra col vento — si è presentata al mio uscio con una fotografia.</p>
+
+<blockquote>
+  <p>“È sparito ieri. Non ha mai fatto così. E’ un randagio, mi tiene compagnia.”</p>
+</blockquote>
+
+<p>Il soggetto in questione: un meticcio bianco e marrone, con un orecchio storto e una lingua che pende sempre a sinistra. Si chiamava <strong>Teodoro</strong>.
+E Teresa non esagerava: quel cane era il sindaco onorario della frazione. Amico di tutti, sorvegliante delle galline, assaggiatore ufficiale di pasta e fasuli.</p>
+
+<p>E adesso… svanito.
+Nessun cancello forzato. Nessuna pista evidente. Tranne una.</p>
+
+<p>Nel cortile, vicino alla cuccia vuota, c’erano orme.
+Piccole. Frettolose. Direzione sud.
+Mi sono messo sulle sue tracce.
+La pista mi ha portato lungo un sentiero battuto tra le case, poi giù, verso la zona degli orti comunali.
+Lì ho trovato il primo indizio: un ciuffo di pelo bianco incastrato tra due assi di una recinzione. E poi, il secondo: <strong>fragole rosicchiate. Tante.</strong>
+E orme. Minuscole, confuse, ma inequivocabili. Teodoro era passato da lì.
+Aveva attraversato i filari come un piccolo fantasma peloso.
+Ma perché?
+L’ho trovato sotto un tunnel di plastica, di quelli che coprono le coltivazioni. Stava dormendo, beato, con la pancia all’aria e il muso sporco di succo.</p>
+
+<blockquote>
+  <p>“Teodoro,” ho sussurrato.
+“…te fatto la panza chiena,” ho aggiunto.</p>
+</blockquote>
+
+<p>Mi ha guardato. Ha scodinzolato. E ha ruttato.
+L’ho riportato a casa in braccio, mentre lui, con la lingua da fuori, sembrava non capire perché tutti lo baciassero come se fosse tornato dalla guerra.
+Teresa ha pianto.
+Io ho accettato volentieri un barattolo di marmellata di fragole.
+E Teodoro?
+È stato perdonato. Ma da quel giorno, davanti alla cuccia, c’è un cancelletto nuovo.
+E un cartello:
+<strong>“ATTENTI AL CANE — affamato di fragole.”</strong></p>
+
+<hr />
+
+<p>📌 <em>Note dell’autore</em>:
+Non tutti i misteri nascono dal male. Alcuni, come questo, nascono dalla fame. O dalla curiosità. O da un semplice richiamo di primavera.
+Ma in ogni caso, le impronte parlano. Basta saperle leggere.</p>
+
+<p><img src="https://frapiocov.github.io/leggere-morra/assets/images/cane.jpg" alt="teresa" width="500" /></p>]]></content><author><name></name></author><category term="mistery" /><summary type="html"><![CDATA[Ci sono casi che ti arrivano via lettera, altri via voce, e altri ancora che ti bussano direttamente alla porta. Quello del piccolo Teodoro mi è piombato addosso una mattina di maggio, quando Teresa — occhi azzurri come il cielo sopra l’Appennino e voce tremante come una finestra col vento — si è presentata al mio uscio con una fotografia.]]></summary></entry><entry><title type="html">Il caso del Macellaio della teglia</title><link href="http://localhost:4000/mistery/2025/07/20/il-macellaio.html" rel="alternate" type="text/html" title="Il caso del Macellaio della teglia" /><published>2025-07-20T18:45:10+02:00</published><updated>2025-07-20T18:45:10+02:00</updated><id>http://localhost:4000/mistery/2025/07/20/il-macellaio</id><content type="html" xml:base="http://localhost:4000/mistery/2025/07/20/il-macellaio.html"><![CDATA[<p><em>Ovvero: quando la carne parlava più di quanto avrebbe dovuto.</em></p>
+
+<hr />
+<p>Il caso del macellaio è uno di quelli che ci ha tolto il sonno.
+C’è un silenzio particolare che avvolge i paesi come Morra dopo il tramonto. È il silenzio delle persiane chiuse, delle piazze svuotate, dei segreti che si celano tra i muri antichi e le botteghe ancora accese oltre l’orario.</p>
+
+<p>Ed è proprio in una di queste botteghe — una macelleria all’angolo della piazza di Morra De Sanctis— che ha avuto inizio una storia che nessuno voleva davvero raccontare. Finché, per caso o per destino, ci sono inciampato.</p>
+
+<p>Tutto è cominciato con i cani. Sparivano.
+Prima uno, poi un altro. Sempre di notte. Nessun rumore. Nessun latrato. Nessun corpo.</p>
+
+<p>“Avrà seguito una cagna in calore,” dicevano. “È scappato per i boschi.”
+Ma erano troppi, e troppo docili per andarsene così, uno dopo l’altro.
+E poi, c’era quel tanfo nell’aria. Quella puzza strana, dolciastra, che si sentiva passando accanto alla macelleria di Daniele.</p>
+
+<p>Daniele era un’istituzione. Metteva il grembiule alle 5 del mattino, spaccava quarti di manzo come fossero rami secchi, e conosceva a memoria il nome delle nonne, delle figlie e delle nipoti di mezzo paese.
+Un uomo dalla battuta pronta. Un artigiano della carne.
+Un insospettabile.</p>
+
+<p>Una sera, durante una cena con la signora Rosetta, vedova e gran cuciniera, m’è capitato di assaggiare uno spezzatino <em>“di Daniele, fresco fresco”</em>.
+Era strano. Fibroso. Più scuro del solito. Ma il sapore…
+Il sapore mi ha fatto tornare in mente un odore preciso. Quello di un cane randagio che avevo soccorso anni fa. Un odore che non dimentichi.</p>
+
+<p>Mi sono fatto dare un avanzo e l’ho portato a un amico biologo all’Università degli Studi di Salerno. Gli ho detto che era per un’inchiesta. Due giorni dopo mi ha richiamato.</p>
+
+<blockquote>
+  <p>“Giò, ma che roba m è purtato? Questa non è carne bovina. È… canina.”</p>
+</blockquote>
+
+<p>Lo capivo. Fin troppo bene.</p>
+
+<p>Non è stato facile entrare nella bottega di Daniele. Ma con la scusa di un’intervista per il blog sui mestieri antichi, ci sono riuscito.
+Gli occhi non mentono mai. E i suoi, dietro il sorriso, erano neri e spenti.</p>
+
+<p>L’arresto è arrivato in sordina. Daniele ha confessato in parte. Ha detto che “era un modo per arrotondare”, che nessuno s’era mai accorto di nulla, e che “tanto i cani erano randagi”.</p>
+
+<p>Oggi la sua bottega è chiusa. C’è un cartello con scritto “Affittasi” sulla serranda.</p>
+
+<p>E i cani del paese, finalmente, abbaiano di nuovo di notte.</p>
+
+<hr />
+
+<p>📌 <em>Note dell’autore</em>:
+A volte le storie più spaventose non nascono nei vicoli bui delle città, ma nei posti dove ti senti più al sicuro. Dove conosci tutti. Dove <em>credi</em> di conoscere tutti.
+E invece, basta grattare la superficie… per sentire l’odore.</p>]]></content><author><name></name></author><category term="mistery" /><summary type="html"><![CDATA[Ovvero: quando la carne parlava più di quanto avrebbe dovuto.]]></summary></entry><entry><title type="html">L’erba cattiva non muore mai</title><link href="http://localhost:4000/mistery/2025/05/03/erba.html" rel="alternate" type="text/html" title="L’erba cattiva non muore mai" /><published>2025-05-03T18:05:10+02:00</published><updated>2025-05-03T18:05:10+02:00</updated><id>http://localhost:4000/mistery/2025/05/03/erba</id><content type="html" xml:base="http://localhost:4000/mistery/2025/05/03/erba.html"><![CDATA[<p>Non tutti gli omicidi avvengono nel buio di una notte senza luna. Alcuni si consumano a mezzogiorno, in una cucina inondata di sole, mentre l’acqua bolle e il profumo del sugo invade la casa. È in quei momenti che la violenza assume la forma più subdola: quella dell’apparente normalità.</p>
+
+<p>La chiamavano la Dottoressa del Vento, per via del suo nome (Elisa Venturi) e della sua capacità di portare innovazione ovunque passasse. Professionista brillante, consulente finanziaria. Aveva trasformato la filiale bancaria di Lioni in un centro di eccellenza. E questo, a suo marito Paolo, non andava giù.</p>
+
+<p>Elisa è morta di domenica. Pranzo in famiglia, lasagne al forno, un bicchiere di rosso. Alle 16:30, era riversa sul divano, con gli occhi sbarrati e la pelle grigia.</p>
+
+<p>L’autopsia parla chiaro: avvelenamento da cicuta minore. Una pianta tossica che cresce nei campi incolti, simile al prezzemolo. Letale anche in piccole dosi.</p>
+
+<p>La domanda non era come, ma perché solo Elisa?
+Paolo si era offerto di cucinare, come ogni domenica. Diceva di volerla coccolare, “visto quanto lavora, povera stella”, ma non aveva toccato il piatto che le aveva servito.</p>
+
+<p>Avevo intervistato Paolo due giorni dopo la veglia funebre. Non c’erano lacrime, solo una specie di orgoglio stanco. Disse:</p>
+<blockquote>
+  <p>“Elisa si stava… allontanando. Era sempre via, sempre al telefono. Avevamo smesso di essere una coppia.”</p>
+</blockquote>
+
+<p>Non l’ha detto con rabbia. Lo ha detto con disprezzo sottile, quello che non urla ma pesa più del silenzio.
+Nel compost ho trovato il gambo della pianta. Nel suo computer, una ricerca recente: “cicuta quanto basta per uccidere”. Il resto l’ha fatto la confessione, mezza sussurrata, mezza vantata.</p>
+<blockquote>
+  <p>“Era una donna troppo forte. E io… io non ero più niente accanto a lei.”</p>
+</blockquote>
+
+<p>Paolo Venturi è in carcere, in attesa di processo. Elisa è una delle tante donne il cui talento ha generato paura invece che ammirazione.</p>
+
+<hr />
+
+<p>📌 Note dell’autore
+Il femminicidio non è solo un gesto estremo. È l’ultimo anello di una catena fatta di controllo, gelosia e inadeguatezza. Non accade per amore, ma per possesso. E quando la libertà e la forza di una donna fanno tremare l’ego di un uomo fragile, è lì che la violenza cerca spazio.
+Questa storia non è unica. È una tra tante. Ma raccontarla, ricordarla e scriverla è il modo che abbiamo per dire: non è normale. Non è accettabile. Elisa non sarà dimenticata.</p>]]></content><author><name></name></author><category term="mistery" /><summary type="html"><![CDATA[Non tutti gli omicidi avvengono nel buio di una notte senza luna. Alcuni si consumano a mezzogiorno, in una cucina inondata di sole, mentre l’acqua bolle e il profumo del sugo invade la casa. È in quei momenti che la violenza assume la forma più subdola: quella dell’apparente normalità.]]></summary></entry></feed>

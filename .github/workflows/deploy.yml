@@ -1,22 +1,4 @@
-name: Deploy multiplo Jekyll
-
-on:
-  push:
-    branches: ["main"]
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
+steps:
       - name: Checkout del codice
         uses: actions/checkout@v4
 
@@ -29,20 +11,33 @@ jobs:
       - name: Configura GitHub Pages
         uses: actions/configure-pages@v4
 
-      # 1. sito principale
-      - name: Build Sito Principale
-        run: |
-          bundle exec jekyll build --destination _site
+      # 1. COPIA I FILE STATICI (La tua pagina principale)
+      # Questo comando crea la cartella _site e ci copia dentro l'index.html principale
+      # escludendo la cartella del sottoprogetto Jekyll per ora.
+      # Se hai una cartella "assets" principale o un file "style.css", aggiungili qui di seguito.
+      <Sequence>
+      {/* Reason: L'ordine dei passaggi di copia e compilazione è fondamentale per non sovrascrivere i file. */}
+        <Step title="Prepara la cartella finale" subtitle="Copia l'HTML puro">
+          ```bash
+          mkdir _site
+          cp index.html _site/
+          # Se hai un file CSS principale, scommenta la linea sotto:
+          # cp style.css _site/
+          ```
+        </Step>
 
-      # 2. gionatasso
-      - name: Build Progetto gionatasso
-        run: |
+      # 2. COMPILA IL SOTTOPROGETTO JEKYLL
+      # Entra nella cartella, installa le gemme e compila DENTRO la sottocartella di _site
+        <Step title="Compila il sottoprogetto" subtitle="Jekyll Build">
+          ```bash
           cd leggere-morra
           bundle install
           bundle exec jekyll build --destination ../_site/leggere-morra
+          ```
+        </Step>
+      </Sequence>
 
-      # duplicare per ogni sotto progetto
-
+      # 3. CARICA E FA IL DEPLOY
       - name: Carica l'output finale
         uses: actions/upload-pages-artifact@v3
 
