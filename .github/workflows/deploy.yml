@@ -1,53 +1,58 @@
-steps:
-      - name: Checkout del codice
-        uses: actions/checkout@v4
+name: Deploy Pages (Static + Jekyll Subfolder)
 
-      - name: Setup Ruby e Jekyll
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.2'
-          bundler-cache: true
+on:
+  push:
+    branches: ["main"] # Cambia in "master" se il tuo branch principale si chiama così
+  workflow_dispatch: # Permette di forzare il deploy manualmente dall'interfaccia di GitHub
 
-      - name: Configura GitHub Pages
-        uses: actions/configure-pages@v4
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
-      # 1. COPIA I FILE STATICI (La tua pagina principale)
-      # Questo comando crea la cartella _site e ci copia dentro l'index.html principale
-      # escludendo la cartella del sottoprogetto Jekyll per ora.
-      # Se hai una cartella "assets" principale o un file "style.css", aggiungili qui di seguito.
-      <Sequence>
-      {/* Reason: L'ordine dei passaggi di copia e compilazione è fondamentale per non sovrascrivere i file. */}
-        <Step title="Prepara la cartella finale" subtitle="Copia l'HTML puro">
-          ```bash
-          mkdir _site
-          cp index.html _site/
-          # Se hai un file CSS principale, scommenta la linea sotto:
-          # cp style.css _site/
-          ```
-        </Step>
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
-      # 2. COMPILA IL SOTTOPROGETTO JEKYLL
-      # Entra nella cartella, installa le gemme e compila DENTRO la sottocartella di _site
-        <Step title="Compila il sottoprogetto" subtitle="Jekyll Build">
-          ```bash
-          cd leggere-morra
-          bundle install
-          bundle exec jekyll build --destination ../_site/leggere-morra
-          ```
-        </Step>
-      </Sequence>
-
-      # 3. CARICA E FA IL DEPLOY
-      - name: Carica l'output finale
-        uses: actions/upload-pages-artifact@v3
-
-  deploy:
+jobs:
+  build-and-deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build
     steps:
+      - name: Checkout del codice
+        uses: actions/checkout@v4
+
+      - name: Configura Ruby e Jekyll
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2' # Versione stagna e supportata di Ruby
+          bundler-cache: true # Velocizza i deploy successivi se usi un Gemfile
+
+      - name: Configura GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: Crea cartella di staging temporanea
+        run: mkdir _site_dist
+
+      - name: Build del progetto Jekyll (Sottocartella)
+        run: |
+          cd leggere-morra
+          bundle install
+          bundle exec jekyll build --destination ../_site_dist/leggere-morra
+          cd ..
+
+      - name: Copia i file statici della Root nella cartella finale
+        # Copia index.html, style.css e le altre risorse statiche (es. immagini, PDF) senza sovrascrivere la sottocartella
+        run: |
+          rsync -av --progress . _site_dist --exclude=leggere-morra --exclude=_site_dist --exclude=.github --exclude=.git
+
+      - name: Carica l'artefatto per GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '_site_dist'
+
       - name: Deploy su GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
